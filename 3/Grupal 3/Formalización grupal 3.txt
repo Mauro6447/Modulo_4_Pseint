@@ -1,0 +1,36 @@
+Exposición del caso: 
+
+Una compañía de seguros ha elaborado una sesión de lluvia de ideas, en las que se han planteado
+ciertas observaciones que se desea analizar prontamente. A fin de ordenar las ideas, se ha
+solicitado:
+
+1.- Formalizar la frase.
+
+2.- ¿Es posible representar el resultado anterior como un algoritmo en pseudocódigo? De ser
+posible, transfórmelo a PSeInt atomizando las frases y asignando un valor de verdad; en caso
+contrario, justifique por qué no se puede hacer.
+
+La frase en cuestión es:
+
+“Si un trabajador no cuida los procedimientos de seguridad, ocurrirá un accidente. Si el trabajador
+no lee el manual de seguridad interno sucedería lo mismo. El trabajador no ha sufrido incidentes.
+De ahí concluimos que ha seguido todos los procedimientos de seguridad, y ha leído el manual de
+seguridad interno”.
+
+
+Atomizar la frase en unidades mínimas de expresión: 
+
+p <- Un trabajador cuida los procedimientos de seguridad.
+q <- Ocurrirá un accidente.
+r <- El trabajador lee el manual de seguridad interno.
+s <- El trabajador ha sufrido incidentes.
+
+Formalizar la frase en un conjunto de proposiciones lógicas:
+
+{~p->q,~r->q,~s}⊨(p∧r)
+
+Representar el resultado como algoritmo en pseudo código asignando valor de verdad: 
+
+Adjunto en archivo .psc
+
+Rebeca Gatica - Nelson Toledo - Mauro Boccardo
